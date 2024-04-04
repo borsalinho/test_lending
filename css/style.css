@@ -1,6 +1,7 @@
 @import url('reset.css');
 @import url('header.css');
 @import url('font.css');
+@import url('description.css');
 
 body{
     font-family: 'Merriweather', serif;
@@ -11,4 +12,8 @@ body{
 .container{
     margin: 0 auto;
     max-width: 1222px;
+}
+
+section{
+    padding: 80px 0 120px 0;
 }

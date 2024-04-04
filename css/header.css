@@ -68,7 +68,6 @@
 }
 
 .header__buttons{
-    margin-bottom: 132px;
     display: flex;
     justify-content: space-between;
 }
