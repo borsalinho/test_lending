@@ -29,3 +29,76 @@
     padding: 26px 0 132px 0;
     position: relative;
 }
+
+.header__logo{
+    margin-bottom: 62px;
+    position: relative;
+    z-index: 1;
+}
+
+.header__col{
+    width: 542px;
+}
+
+.header__title{
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 66px;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.header__title--center{
+    text-align: center;
+    display: block;
+}
+
+.header__title--end{
+    text-align: end;
+    display: block;
+}
+
+.header__text{
+    font-family: Golos Text;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.4px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header__buttons{
+    margin-bottom: 132px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__button{
+    background: none;
+    width: 263px;
+    height: 72px;
+    border-radius: 66px;
+    font-family: Golos Text;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    border: 2px solid #1F1F1F
+}
+.header__button:hover{
+    background: #1F1F1F;
+    color: #FFFFFF;
+}
+
+.header__button--black{
+    background: #1F1F1F;
+    color: #FFFFFF;
+}
+
+.header__button--black:hover{
+    background: #FBCE51;
+    color: #1F1F1F;
+}
+
