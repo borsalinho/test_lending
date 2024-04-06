@@ -1,0 +1,49 @@
+.running, .cloned_runner{
+    padding: 0;
+}
+
+.running_body{
+    background: #F54932;
+    padding: 18px 0;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #FFFFFF;
+    width:100%;
+    overflow:hidden;
+    white-space:nowrap;
+}
+.running_body p { 
+    width:100%;
+    text-indent:0;
+    animation: marquee 20s linear infinite;
+    display: flex;
+    align-items: center;
+}
+.running_body p img{
+    margin: 0 12px;
+}
+.running_body p:hover{
+    animation-play-state: paused
+}
+
+.running_body span{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -18px;
+}
+
+@keyframes marquee {
+    0%  { transform: translate(100%, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+@media only screen and (max-width: 440px) {
+    .marquee p{
+        animation:none;
+        padding-left:0
+    }    
+}
