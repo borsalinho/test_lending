@@ -192,55 +192,82 @@
             
         </section>
 
-        <section>
+        <section class="users">
             <div class="container">
-                <h2>Участники турнира</h2>
-            <div>
-                <img src="images/avatar.png" alt="avatar">
-                <h4>Хозе-Рауль Капабланка</h4>
-                <p>Чемпион мира по шахматам</p>
-                <button>Подробнее</button>
-            </div>
-            <div>
-                <img src="images/avatar.png" alt="avatar">
-                <h4>Эммануил Ласкер</h4>
-                <p>Чемпион мира по шахматам</p>
-                <button>Подробнее</button>
-            </div>
-            <div>
-                <img src="images/avatar.png" alt="avatar">
-                <h4>Александр Алехин</h4>
-                <p>Чемпион мира по шахматам</p>
-                <button>Подробнее</button>
-            </div>
-            <div>
-                <img src="images/avatar.png" alt="avatar">
-                <h4>Арон Нимцович</h4>
-                <p>Чемпион мира по шахматам</p>
-                <button>Подробнее</button>
-            </div>
-            <div>
-                <img src="images/avatar.png" alt="avatar">
-                <h4>Рихард Рети</h4>
-                <p>Чемпион мира по шахматам</p>
-                <button>Подробнее</button>
-            </div>
-            <div>
-                <img src="images/avatar.png" alt="avatar">
-                <h4>Остап Бендер</h4>
-                <p>Чемпион мира по шахматам</p>
-                <button>Подробнее</button>
-            </div>
+                
+                <div class="users__box">
+                    <h2 class="users__title">УЧАСТНИКИ ТУРНИРА</h2>
+                    <div class="users__carusel">
+                        
+                        <div class="users__card">
+                            <img class="users__card_avatar" src="images/avatar.png" alt="avatar">
+                            <h4  class="users__card_name">Хозе-Рауль Капабланка</h4>
+                            <p  class="users__card_discr">Чемпион мира по шахматам</p>
+                            <button  class="users__card_button">Подробнее</button>
+                        </div>
+                        <div class="users__card">
+                            <img class="users__card_avatar" src="images/avatar.png" alt="avatar">
+                            <h4  class="users__card_name">Эммануил Ласкер</h4>
+                            <p  class="users__card_discr">Чемпион мира по шахматам</p>
+                            <button  class="users__card_button">Подробнее</button>
+                        </div>
+                        <div class="users__card">
+                            <img class="users__card_avatar" src="images/avatar.png" alt="avatar">
+                            <h4  class="users__card_name">Александр Алехин</h4>
+                            <p  class="users__card_discr">Чемпион мира по шахматам</p>
+                            <button  class="users__card_button">Подробнее</button>
+                        </div>
+                        <div class="users__card">
+                            <img class="users__card_avatar" src="images/avatar.png" alt="avatar">
+                            <h4  class="users__card_name">Арон Нимцович</h4>
+                            <p  class="users__card_discr">Чемпион мира по шахматам</p>
+                            <button  class="users__card_button">Подробнее</button>
+                        </div>
+                        <div class="users__card">
+                            <img class="users__card_avatar" src="images/avatar.png" alt="avatar">
+                            <h4  class="users__card_name">Рихард Рети</h4>
+                            <p  class="users__card_discr">Чемпион мира по шахматам</p>
+                            <button  class="users__card_button">Подробнее</button>
+                        </div>
+                        <div class="users__card">
+                            <img class="users__card_avatar" src="images/avatar.png" alt="avatar">
+                            <h4  class="users__card_name">Остап Бендер</h4>
+                            <p  class="users__card_discr">Чемпион мира по шахматам</p>
+                            <button  class="users__card_button">Подробнее</button>
+                        </div>
+                    </div>
+                    
+                    <div class="users__arrows">
+                        <button class="users__arrow users__arrow--prev">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="22" cy="22" r="22" transform="rotate(-180 22 22)" fill="#313131"/>
+                                <path d="M24.5382 30.4614L16.0767 21.9999L24.5382 13.5384" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                                </svg>
+                        </button>
+                        <div class="users__counter"></div>
+                        <button class="users__arrow users__arrow--next">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="22" cy="22" r="22" fill="#313131"/>
+                                <path d="M19.4618 13.5385L27.9233 22L19.4618 30.4615" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                            </svg>
+                                
+                        </button>
+                    </div>
+
+                </div>
+                
             </div>
             
         </section>
     </main>
-    <footer>
-        <div class="container">
-            <p>
+    <footer class="footer">
+        <div class="container footer__box">
+            <p class="footer__text">
                 Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».
             </p>
         </div>
     </footer>
+
+    <script src="/scripts/users_carusel.js"></script>
 </body>
 </html>

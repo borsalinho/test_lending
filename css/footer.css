@@ -1,0 +1,16 @@
+.footer{
+    background: #E9DED4;
+}
+
+.footer__box{
+    padding: 40px 0;
+}
+
+.footer__text{
+    font-family: Golos Text;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: #313131;
+
+}
