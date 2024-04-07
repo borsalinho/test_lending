@@ -30,10 +30,10 @@
                     </p>
                     <div class="header__buttons">
                         <button class="header__button header__button--black">
-                            Поддержать <br> шахматную мысль
+                            Поддержать шахматную мысль
                         </button>
                         <button class="header__button">
-                            Подробнее <br> о турнире
+                            Подробнее о турнире
                         </button>
                     </div>
                 </div>
@@ -61,20 +61,31 @@
             <div class="container">
                 <div class="description__content">
 
-                    <div class="description__col">
-                        <h3 class="description__title">
-                            ЧТОБЫ ПОДДЕРЖАТЬ МЕЖДУНАРОДНЫЙ ВАСЮКИНСКИЙ ТУРНИР ПОСЕТИТЕ ЛЕКЦИЮ НА ТЕМУ:
-                            <span class="description__title--red">
-                                «ПЛОДОТВОРНАЯ ДЕБЮТНАЯ ИДЕЯ»
-                            </span> 
-                        </h3>
-                        <img src="images/group_chess.png" alt="group_chess">
+                    <div class="description__col--1">
+                        <div class="description__col--el_1">
+                            <h3 class="description__title">
+                                ЧТОБЫ ПОДДЕРЖАТЬ МЕЖДУНАРОДНЫЙ ВАСЮКИНСКИЙ ТУРНИР 
+                            </h3>
+                        </div>
+                        <div class="description__col--el_2">
+                            <img src="images/group_chess.png" alt="group_chess">
+                        </div>
+                        <div class="description__col--el_3">
+                            <h3 class="description__title">
+                                ПОСЕТИТЕ ЛЕКЦИЮ НА ТЕМУ:
+                                <span class="description__title--red">
+                                    «ПЛОДОТВОРНАЯ ДЕБЮТНАЯ ИДЕЯ»
+                                </span> 
+                            </h3>
+                        </div>
+                        
                     </div>
                     
-                    <div class="description__col">
-                        <img src="images/alone_chess.png" alt="alone_chess">
-                        
-                        <div>
+                    <div class="description__col--2">
+                        <div class="description__col--el_4">
+                            <img src="images/alone_chess.png" alt="alone_chess">
+                        </div>
+                        <div class="description__col--el_5">
                             <h3 class="description__title">
                                 И СЕАНС
                                 <span class="description__title--red">
@@ -82,7 +93,8 @@
                                 </span> 
                                 ГРОССМЕЙСТЕРА О. БЕНДЕРА
                             </h3>
-                
+                        </div>
+                        <div class="description__col--el_6">
                             <table class="description__table">
                                 <tr>
                                     <td>Место проведения:</td>
@@ -109,6 +121,11 @@
                             <a href="#">По всем вопросам обращаться в администрацию к К. Михельсону</a>
                         </div>
                         
+                        
+                       
+                            
+                           
+                        
                     </div>
                 </div>
                 
@@ -123,8 +140,12 @@
                 <h2 class="stages__title">
                     ЭТАПЫ ПРЕОБРАЖЕНИЯ ВАСЮКОВ <span class="stages__title--link"><a href="#">Будущие источники обогащения васюкинцев</a></span>
                 </h2>
+                <div class="stages__image_box">
+                    <img class="stages__images" src="images/samolet.png" alt="samolet">
+                </div>
+                
                 <div class="stages__box">
-                    <div class="stages__card--1">
+                    <div class="stages__card stages__card--1">
                         <div class="stages__stage">
                             <span>1</span>
                             <p>
@@ -139,7 +160,7 @@
                         </div>
                     </div>
                     
-                    <div class="stages__card--2">
+                    <div class="stages__card stages__card--2">
                         <div class="stages__stage">
                             <span>3</span>
                             <p>
@@ -148,7 +169,7 @@
                         </div>
                     </div>
                     
-                    <div class="stages__card--3">
+                    <div class="stages__card stages__card--3">
                         <div class="stages__stage">
                             <span>4</span>
                             <p>
@@ -163,7 +184,7 @@
                         </div>
                     </div>
 
-                    <div class="stages__card--4">
+                    <div class="stages__card stages__card--4">
                         <div class="stages__stage ">
                             <span>6</span>
                             <p>
@@ -172,22 +193,26 @@
                         </div>
                     </div>
                     
-                    <div class="stages__card--5">
+                    <div class="stages__card stages__card--5">
                         <div class="stages__stage">
                             <span>7</span>
                             <p class="stages__card--5__text">
                                 Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн
                             </p>
                         </div>
-                        <img class="stages__card--5__images" src="images/samolet.png" alt="samolet">
+                        
                     </div>
                     
                 </div>
                 
+
+                <div class="stages__buttons">
+                    <div class="stages__dots"></div>
+                    <button class="stages__arrow_prev" disabled>Предыдущий</button>
+                    <button class="stages__arrow_next carousel-next">Следующий</button>
+                </div>
                 
-                
-    
-                
+                        
             </div>
             
         </section>
@@ -273,5 +298,6 @@
 
     <script src="/scripts/users_carusel.js"></script>
     <script src="/scripts/cloned_running.js"></script>
+    <script src="/scripts/stages_carusel.js"></script>
 </body>
 </html>

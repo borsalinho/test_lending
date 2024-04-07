@@ -41,7 +41,7 @@
     0%  { transform: translate(100%, 0); }
     100% { transform: translate(-100%, 0); }
 }
-@media only screen and (max-width: 440px) {
+@media screen and (max-width: 440px) {
     .marquee p{
         animation:none;
         padding-left:0
