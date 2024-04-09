@@ -79,6 +79,11 @@
 }
 
 @media only screen and (min-width: 1280px){
+    .description__anchor{
+        position: absolute;
+        top: -200px;
+    }
+
     .description__col--1, .description__col--2{
         display: grid;
         align-items: center;
@@ -91,6 +96,7 @@
     }
     .description__col--2{
         column-gap: 44px;
+        position: relative;
     }
     .description__title{
         font-size: 36px;

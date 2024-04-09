@@ -29,10 +29,10 @@
                         Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам
                     </p>
                     <div class="header__buttons">
-                        <button class="header__button header__button--black">
+                        <button class="header__button header__button--black" onclick="scrollToSection('anchor_donate')">
                             Поддержать шахматную мысль
                         </button>
-                        <button class="header__button">
+                        <button class="header__button" onclick="scrollToSection('anchor_more_info')">
                             Подробнее о турнире
                         </button>
                     </div>
@@ -81,7 +81,7 @@
                         
                     </div>
                     
-                    <div class="description__col--2">
+                    <div class="description__col--2" >
                         <div class="description__col--el_4">
                             <img src="images/alone_chess.png" alt="alone_chess">
                         </div>
@@ -95,6 +95,7 @@
                             </h3>
                         </div>
                         <div class="description__col--el_6">
+                            <div class="description__anchor" id="anchor_donate"></div>
                             <table class="description__table">
                                 <tr>
                                     <td>Место проведения:</td>
@@ -135,7 +136,7 @@
             </div>
         </section>
 
-        <section class="stages">
+        <section class="stages" id="anchor_more_info">
             <div class="container">
                 <h2 class="stages__title">
                     ЭТАПЫ ПРЕОБРАЖЕНИЯ ВАСЮКОВ <span class="stages__title--link"><a href="#">Будущие источники обогащения васюкинцев</a></span>
@@ -144,72 +145,85 @@
                     <img class="stages__images" src="images/samolet.png" alt="samolet">
                 </div>
                 
-                <div class="stages__box">
-                    <div class="stages__card stages__card--1">
-                        <div class="stages__stage">
-                            <span>1</span>
-                            <p>
-                                Строительство железнодорожной магистрали Москва-Васюки
-                             </p>
+                <div class="stages__box-hidden">
+                    <div class="stages__box" >
+                        <div class="stages__card stages__card--1">
+                            <div class="stages__stage">
+                                <span>1</span>
+                                <p>
+                                    Строительство железнодорожной магистрали Москва-Васюки
+                                 </p>
+                            </div>
+                            <div class="stages__stage">
+                                <span>2</span>
+                                <p>
+                                    Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
+                                </p>
+                            </div>
                         </div>
-                        <div class="stages__stage">
-                            <span>2</span>
-                            <p>
-                                Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
-                            </p>
+                        
+                        <div class="stages__card stages__card--2">
+                            <div class="stages__stage">
+                                <span>3</span>
+                                <p>
+                                    Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="stages__card stages__card--2">
-                        <div class="stages__stage">
-                            <span>3</span>
-                            <p>
-                                Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет
-                            </p>
+                        
+                        <div class="stages__card stages__card--3">
+                            <div class="stages__stage">
+                                <span>4</span>
+                                <p>
+                                    Строительство дворца для турнира
+                                </p>
+                            </div>
+                            <div class="stages__stage">
+                                <span>5</span>
+                                <p>
+                                    Размещение гаражей для гостевого автотранспорта
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="stages__card stages__card--3">
-                        <div class="stages__stage">
-                            <span>4</span>
-                            <p>
-                                Строительство дворца для турнира
-                            </p>
+    
+                        <div class="stages__card stages__card--4">
+                            <div class="stages__stage ">
+                                <span>6</span>
+                                <p>
+                                    Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов
+                                </p>
+                            </div>
                         </div>
-                        <div class="stages__stage">
-                            <span>5</span>
-                            <p>
-                                Размещение гаражей для гостевого автотранспорта
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="stages__card stages__card--4">
-                        <div class="stages__stage ">
-                            <span>6</span>
-                            <p>
-                                Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="stages__card stages__card--5">
-                        <div class="stages__stage">
-                            <span>7</span>
-                            <p class="stages__card--5__text">
-                                Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн
-                            </p>
+                        
+                        <div class="stages__card stages__card--5">
+                            <div class="stages__stage">
+                                <span>7</span>
+                                <p class="stages__card--5__text">
+                                    Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн
+                                </p>
+                            </div>
+                            
                         </div>
                         
                     </div>
-                    
                 </div>
+                
                 
 
                 <div class="stages__buttons">
+                    <button class="stages__arrow_prev" disabled>
+                        <svg width="36" height="36" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="22" cy="22" r="22" transform="rotate(-180 22 22)" fill="#313131"/>
+                            <path d="M24.5382 30.4614L16.0767 21.9999L24.5382 13.5384" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                        </svg>
+                    </button>
                     <div class="stages__dots"></div>
-                    <button class="stages__arrow_prev" disabled>Предыдущий</button>
-                    <button class="stages__arrow_next carousel-next">Следующий</button>
+                    <button class="stages__arrow_next carousel-next">
+                        <svg width="36" height="36" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="22" cy="22" r="22" fill="#313131"/>
+                            <path d="M19.4618 13.5385L27.9233 22L19.4618 30.4615" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                        </svg>
+                    </button>
                 </div>
                 
                         
@@ -264,14 +278,14 @@
                     
                     <div class="users__arrows">
                         <button class="users__arrow users__arrow--prev">
-                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="36" height="36" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="22" cy="22" r="22" transform="rotate(-180 22 22)" fill="#313131"/>
                                 <path d="M24.5382 30.4614L16.0767 21.9999L24.5382 13.5384" stroke="white" stroke-width="2" stroke-linecap="square"/>
                                 </svg>
                         </button>
                         <div class="users__counter"></div>
                         <button class="users__arrow users__arrow--next">
-                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="36" height="36" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="22" cy="22" r="22" fill="#313131"/>
                                 <path d="M19.4618 13.5385L27.9233 22L19.4618 30.4615" stroke="white" stroke-width="2" stroke-linecap="square"/>
                             </svg>
@@ -296,6 +310,7 @@
         </div>
     </footer>
 
+        <script src="/scripts/anchor.js"></script>
     <script src="/scripts/users_carusel.js"></script>
     <script src="/scripts/cloned_running.js"></script>
     <script src="/scripts/stages_carusel.js"></script>

@@ -5,25 +5,24 @@ document.addEventListener("DOMContentLoaded", function() {
     const nextBtn = document.querySelector(".users__arrow--next");
     const counter = document.querySelector(".users__counter");
     const slideWidth = slides[0].clientWidth;
+    const visibleSlides = Math.min(3, slides.length);
     let currentIndex = 0;
     let totalSlides = slides.length;
 
-   
     function updateCounter() {
-        const visibleSlides = Math.min(3, totalSlides); 
-        // const start = currentIndex + 1;
+        const start = currentIndex + 1;
         const end = currentIndex + visibleSlides;
-        counter.textContent = `${end}/${totalSlides}`;
+        counter.textContent = `${start}/${totalSlides}`;
     }
 
     function nextSlide() {
-        currentIndex = (currentIndex + 3) % totalSlides;
+        currentIndex = (currentIndex + 1) % totalSlides;
         updateSlide();
         updateCounter();
     }
 
     function prevSlide() {
-        currentIndex = (currentIndex - 3 + totalSlides) % totalSlides;
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
         updateSlide();
         updateCounter();
     }

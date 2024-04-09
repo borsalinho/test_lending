@@ -19,6 +19,9 @@
     position: relative;
 
 }
+.stages__box-hidden{
+    overflow: hidden;
+}
 .stages__box{
     margin: 0px -40px;
     display: flex;
@@ -83,6 +86,58 @@
     align-items: center;
 }
 
+.stages__buttons{
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stages__arrow_prev,
+.stages__arrow_next {
+    background: none;
+}
+.stages__arrow_prev{
+    margin-right: 13px;
+}
+
+.stages__arrow_next {
+    margin-left: 13px;
+}
+
+.stages__arrow_prev {
+    left: 10px;
+}
+
+.stages__arrow_next {
+    right: 0;
+}
+.stages__arrow_prev:not(:disabled):hover circle,
+.stages__arrow_next:not(:disabled):hover circle {
+    fill:#FBCE51;
+}
+.stages__arrow_prev:disabled, .stages__arrow_next:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.stages__dots {
+    display: flex;
+    justify-content: center;
+}
+
+.stages__dot {
+    width: 10px;
+    height: 10px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.stages__dot.active {
+    background-color: #313131;
+}
 
 @media only screen and (min-width: 1280px){
     .stages__buttons{
@@ -166,79 +221,4 @@
         padding: 20px;
     }
     
-}
-
-
-
-
-/* .carousel-track {
-    display: flex;
-    transition: transform 0.3s ease;
-} */
-
-
-
-.stages__arrow_prev,
-.stages__arrow_next {
-    
-    
-    transform: translateY(-50%);
-    padding: 10px;
-    border: none;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-}
-
-.stages__arrow_prev {
-    left: 10px;
-}
-
-.stages__arrow_next {
-    right: 10px;
-}
-.stages__dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.stages__dot {
-    width: 10px;
-    height: 10px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-.stages__dot.active {
-    background-color: #007bff;
-}
-
-.stages__arrow_prev, .stages__arrow_next {
-    cursor: pointer;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-}
-
-.stages__arrow_prev:disabled, .stages__arrow_next:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
-.stages__dot {
-    width: 10px;
-    height: 10px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-.stages__dot.active {
-    background-color: #007bff;
 }

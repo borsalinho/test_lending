@@ -1,16 +1,11 @@
-.users{
-
-}
-
 .users__title{
-    font-size: 54px;
+    font-size: 36px;
+    line-height: 39.6px;
     font-weight: 400;
-    line-height: 64.8px;
     text-align: left;
 }
 
 .users__box{
-    
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -18,7 +13,7 @@
 
 
 .users__carusel{
-    margin-top: 60px;
+    margin-top: 40px;
     display: flex;
     transition: transform 0.3s ease;
 }
@@ -27,7 +22,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    flex: 0 0 33.33%;
+    flex: 0 0 100%;
 }
 .users__card_avatar{
     width: 320px;
@@ -65,12 +60,10 @@
 }
 
 .users__arrows{
-    position: absolute;
-    top:0;
-    right: 6px;
+    margin-top: 40px;
     display: flex;
     align-items: center;
-    
+    justify-content: center;
 }
 
 .users__arrow{
@@ -96,4 +89,35 @@
 
 .users__arrow--deactive circle{
     fill:#D6D6D6;
+}
+
+
+
+@media only screen and (min-width: 1280px){
+
+    .users__title{
+        font-size: 54px;
+        line-height: 64.8px;
+    }
+
+    .users__card{
+        flex: 0 0 33.33%;
+    }
+
+    .users__arrow svg{
+        width: 44px;
+        height: 44px;
+    }
+    .users__carusel{
+        margin-top: 60px;
+    }
+    
+    
+    .users__arrows{
+        margin-top: 0px;
+        position: absolute;
+        top:0;
+        right: 6px;
+    }
+    
 }
