@@ -24,8 +24,14 @@
 }
 .stages__box{
     margin: 0px -40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
     transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .stages__images{
@@ -42,17 +48,23 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 21.6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     height: 100%;
 }
 
 .stages__card {
-    flex: 0 0 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     max-width: 100%;
     padding: 0 40px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     height: 300px;
+    display: -ms-grid;
     display: grid;
 }
 
@@ -82,15 +94,25 @@
     padding: 12px;
     height: 36px;
     width: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .stages__buttons{
     margin-top: 28px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .stages__arrow_prev,
@@ -122,8 +144,12 @@
 }
 
 .stages__dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .stages__dot {
@@ -139,15 +165,18 @@
     background-color: #313131;
 }
 
-@media only screen and (min-width: 1280px){
+@media only screen and (min-width: 992px){
     .stages__buttons{
         display: none;
     }
     .stages__card {
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
         max-width: 100%;
         padding: 0;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         height: auto;
         /* display: grid; */
     }
@@ -164,39 +193,68 @@
         margin-top: 0px;
     }
     .stages__box{
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         margin: 0;
     }
     .stages__card--1{
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
         grid-area: 1/1/2/3;
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 20px 1fr;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
     
     .stages__card--2{
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 1;
         grid-area: 1/3/3/4;
+        display: -ms-grid;
         display: grid;
     }
     
     
     .stages__card--3{
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
         grid-area: 2/1/3/3;
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 20px 1fr;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
     
     .stages__card--4{
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
         grid-area: 3/1/4/2;
+        display: -ms-grid;
         display: grid;
     }
     
     .stages__card--5{
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 1;
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 2;
         grid-area: 3/2/4/4;
         margin-left: 5px;
+        display: -ms-grid;
         display: grid;
     }
     .stages__card--5__text{

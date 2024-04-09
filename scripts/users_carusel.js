@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function updateCounter() {
         const start = currentIndex + 1;
-        const end = currentIndex + visibleSlides;
         counter.textContent = `${start}/${totalSlides}`;
     }
 
@@ -32,10 +31,20 @@ document.addEventListener("DOMContentLoaded", function() {
         container.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
     }
 
+    function handleResize() {
+        slideWidth = slides[0].clientWidth;
+        visibleSlides = Math.min(3, Math.floor(container.clientWidth / slideWidth));
+        updateSlide();
+        updateCounter();
+    }
+
+    window.addEventListener("resize", handleResize);
+
     setInterval(nextSlide, 4000);
 
     nextBtn.addEventListener("click", nextSlide);
     prevBtn.addEventListener("click", prevSlide);
 
     updateCounter();
+    handleResize();
 });
